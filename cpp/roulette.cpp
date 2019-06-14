@@ -6,9 +6,13 @@
 
 #include "roulette.h"
 #include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 
 int RouletteWheel::getNumber() {
+    srand (time(NULL));
+    cout << "Random Number: " << rand() << endl;
     return rand() % 36;
+    
 }   
 
 Color RouletteWheel::getNumberColor(int number) {

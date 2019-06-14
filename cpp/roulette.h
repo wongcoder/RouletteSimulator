@@ -13,6 +13,6 @@ struct RouletteWheel {
     int getNumber();
     Color getNumberColor(int number); 
     RouletteResult generateResult();
-    RouletteWheel();
+    RouletteWheel(){};
 };
 
